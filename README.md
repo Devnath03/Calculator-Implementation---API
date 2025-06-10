@@ -11,8 +11,6 @@ A simple, beginner-friendly RESTful API built with ASP.NET Core (.NET 8.0) to pe
 
 ➗ Division (with divide-by-zero protection)
 
-🌦 Weather Forecast (sample endpoint)
-
 📌 Endpoints
 🔢 Calculator Operations
 All endpoints accept and return JSON.
