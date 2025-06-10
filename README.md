@@ -65,26 +65,24 @@ Model/ — Data models
 
 This is a basic calculator API for demo and learning purposes. Contributions are welcome!
 
-
-
-Tools & Technologies
-ASP.NET Core
+## Tools & Technologies
+* ASP.NET Core
 For building the RESTful API backend.
 
-C#
+* C#
 Main programming language used for API logic and controllers.
 
-Swagger / Swashbuckle
+* Swagger
 For generating interactive API documentation (/swagger endpoint).
 
-.NET 8.0 SDK
+* .NET 8.0 SDK
 Target framework for building and running the project.
 
-CORS
+* CORS
 Cross-Origin Resource Sharing enabled for API accessibility.
 
-Dependency Injection
+* Dependency Injection
 Used for controller and service management (standard in ASP.NET Core).
 
-HTTP/REST
+* HTTP/REST
 Communication protocol for client-server interaction.
