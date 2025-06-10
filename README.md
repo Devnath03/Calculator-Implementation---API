@@ -1,21 +1,29 @@
-## Calculator Implementation API
+📟 Calculator Implementation API
+A simple, beginner-friendly RESTful API built with ASP.NET Core (.NET 8.0) to perform basic calculator operations such as addition, subtraction, multiplication, and division. Includes a sample weather forecast endpoint from the default template.
 
-A simple RESTful API for performing basic calculator operations, built with ASP.NET Core.
+🚀 Features
+➕ Addition
 
-Features
-Addition
-Subtraction
-Multiplication
-Division (with zero-check protection)
-Test endpoint for weather forecast (template)
-Endpoints
-Calculator Endpoints
+➖ Subtraction
+
+✖️ Multiplication
+
+➗ Division (with divide-by-zero protection)
+
+🌦 Weather Forecast (sample endpoint)
+
+📌 Endpoints
+🔢 Calculator Operations
 All endpoints accept and return JSON.
 
-GET /api/calculate
+✅ GET /api/calculate
 Performs addition.
-Body:
 
+Request Body:
+
+json
+Copy
+Edit
 {
   "Operand1": 5,
   "Operand2": 3,
@@ -23,66 +31,123 @@ Body:
 }
 Response:
 
-{ "Result": 8 }
-POST /subtract
+json
+Copy
+Edit
+{
+  "Result": 8
+}
+➖ POST /subtract
 Performs subtraction.
 
-POST /multiply
+Request Body:
+
+json
+Copy
+Edit
+{
+  "Number1": 10,
+  "Number2": 4
+}
+Response:
+
+json
+Copy
+Edit
+{
+  "Result": 6
+}
+✖️ POST /multiply
 Performs multiplication.
 
-POST /division
+Request Body:
+
+json
+Copy
+Edit
+{
+  "Number1": 6,
+  "Number2": 7
+}
+Response:
+
+json
+Copy
+Edit
+{
+  "Result": 42
+}
+➗ POST /division
 Performs division. Returns error if either operand is zero.
 
-Body example for POST:
+Request Body:
 
+json
+Copy
+Edit
 {
   "Number1": 10,
   "Number2": 5
 }
 Response:
 
-{ "Result": 5 }
-Weather Forecast (Sample)
-GET /WeatherForecast
-Returns random weather data (template endpoint, can be removed).
-Getting Started
-Prerequisites
+json
+Copy
+Edit
+{
+  "Result": 2
+}
+🌤️ GET /WeatherForecast
+Returns mock weather forecast data. This is a sample endpoint provided by the .NET template and can be removed.
+
+🧪 Swagger UI
+While running the app in development, navigate to:
+
+bash
+Copy
+Edit
+https://localhost:<port>/swagger
+This opens the Swagger UI, where you can interactively test all endpoints.
+
+⚙️ Getting Started
+✅ Prerequisites
 .NET 8.0 SDK
-Run Locally
+
+💻 Run Locally
+bash
+Copy
+Edit
 git clone https://github.com/Devnath03/Calculator-Implementation---API.git
 cd Calculator-Implementation---API
 dotnet run
-Swagger UI
-When running in development, browse to /swagger for interactive API documentation and testing.
+🔧 Project Structure
+bash
+Copy
+Edit
+Calculator-Implementation-API/
+│
+├── Controllers/       # API controllers (Calculator, Weather)
+├── Model/             # Request and response models
+├── Program.cs         # App startup and DI
+├── Startup.cs         # Configuration and middleware (if applicable)
+🌐 CORS Support
+CORS is enabled for all origins, methods, and headers to simplify development and testing across different frontends.
 
-CORS
-CORS is enabled for all origins, methods, and headers for easy API testing.
+🧰 Tools & Technologies
+ASP.NET Core — RESTful backend framework
 
-Project Structure
-Controllers/ — API controllers
-Model/ — Data models
+C# — Main language
 
+Swagger — Interactive API documentation
 
-This is a basic calculator API for demo and learning purposes. Contributions are welcome!
+.NET 8.0 — Target SDK
 
-## Tools & Technologies
-* ASP.NET Core
-For building the RESTful API backend.
+CORS — Cross-Origin Resource Sharing
 
-* C#
-Main programming language used for API logic and controllers.
+Dependency Injection — Built-in with ASP.NET Core
 
-* Swagger
-For generating interactive API documentation (/swagger endpoint).
+REST/HTTP — Communication protocol
 
-* .NET 8.0 SDK
-Target framework for building and running the project.
+🤝 Contributing
+This project is for demo and learning purposes. Contributions, improvements, and feedback are welcome!
 
-* CORS
-Cross-Origin Resource Sharing enabled for API accessibility.
-
-* Dependency Injection
-Used for controller and service management (standard in ASP.NET Core).
-
-* HTTP/REST
-Communication protocol for client-server interaction.
