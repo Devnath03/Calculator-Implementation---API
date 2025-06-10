@@ -20,11 +20,6 @@ All endpoints accept and return JSON.
 🧪 Swagger UI
 While running the app in development, navigate to:
 
-bash
-Copy
-Edit
-https://localhost:<port>/swagger
-This opens the Swagger UI, where you can interactively test all endpoints.
 
 ⚙️ Getting Started
 ✅ Prerequisites
