@@ -2,6 +2,7 @@
 A simple, beginner-friendly RESTful API built with ASP.NET Core (.NET 8.0) to perform basic calculator operations such as addition, subtraction, multiplication, and division. Includes a sample weather forecast endpoint from the default template.
 
 🚀 Features
+
 ➕ Addition
 
 ➖ Subtraction
