@@ -1,4 +1,5 @@
-Calculator Implementation API
+## Calculator Implementation API
+
 A simple RESTful API for performing basic calculator operations, built with ASP.NET Core.
 
 Features
